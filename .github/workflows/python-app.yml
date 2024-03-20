@@ -1,16 +1,15 @@
 name: Python application CI
 
- on:
+on:
    push:
      branches: [ "main" ]
 
- permissions:
+permissions:
    contents: read
 
- jobs:
-   build:
-
-runs-on: ubuntu-latest
+jobs:
+  build:
+   runs-on: ubuntu-latest
 
 steps:
 - uses: actions/checkout@v4
